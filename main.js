@@ -127,9 +127,14 @@ group2B1.questions.map(question => {
         console.log(question.text)
     }
 });
-document.querySelector("#cat1", .100).addEventlistener(click) {
-    console.log
-}
+document.querySelectorAll('#catpick').forEach(div => {
+    div.addEventListener('click', (e) => {
+        console.log(e.target)
+    })
+})
+ 
+    
+
 
 
 
