@@ -6,10 +6,10 @@ start();
 
 //create variables.
 const selectCat = document.querySelectorAll('#catpick *');
-console.log(selectCat[13]);
+console.log(selectCat);
 
 let displayBox = document.querySelectorAll('#displaybox *');
-console.log(displayBox[13]);
+console.log(displayBox);
 
 const finalQuestion = document.querySelector('#finalquestion');
 console.log(finalQuestion);
@@ -17,4 +17,9 @@ console.log(finalQuestion);
 let score = document.querySelector('#scoredisplay');
 console.log(score);
 
-console.log('#displayBox'[2].value);
+let group1B1 = {
+    answer:"The air hoses that provide air to the trailer.",
+    question1:"What are air hands?",
+    question2:"What are sad hands?",
+    question3:"What are glad hands"
+}
