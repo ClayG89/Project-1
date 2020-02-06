@@ -54,6 +54,7 @@ let gameObs = [{
     ]
 },
 {
+    catPoint: "cat1 300",
     point: 300,
     answer: "The tires on the front of a semi truck.",
     questions: [{
@@ -71,6 +72,7 @@ let gameObs = [{
     ]
 },
 {
+    catPoint: "cat1 400",
     point: 400,
     answer: "A blind side back.",
     questions: [{
@@ -88,6 +90,7 @@ let gameObs = [{
     ]
 },
 {
+    catPoint: "cat1 500",
     point: 500,
     answer: "A drop and hook.",
     questions: [{
@@ -106,8 +109,9 @@ let gameObs = [{
 },
 
 {
-    answer: "This movie featured a car named Eleanor.",
+    catPoint: "cat2 100",
     point: 100,
+    answer: "This movie featured a car named Eleanor.",
     questions: [{
         text: "What is Gone in 60 seconds?",
         isCorrect: true
@@ -123,8 +127,9 @@ let gameObs = [{
     ]
 },
 {
-    answer: "Denzel Washington starred in this grid iron classic.",
+    catPoint: "cat2 200",
     point: 200,
+    answer: "Denzel Washington starred in this grid iron classic.",
     questions: [{
         text: "What is Gone with the wind?",
         isCorrect: false
@@ -135,6 +140,42 @@ let gameObs = [{
     },
     {
         text: "What is Rudy?",
+        isCorrect: false
+    }
+    ]
+},
+{
+    catPoint: "cat2 300",
+    point: 300,
+    answer: "The movie Castaway starred this iconic actor.",
+    questions: [{
+        text: "Who is Samuel L. Jackson?",
+        isCorrect: false
+    },
+    {
+        text: "Who is Tom Cruise?",
+        isCorrect: false
+    },
+    {
+        text: "Who is Tom Hanks?",
+        isCorrect: true
+    }
+    ]
+},
+{
+    catPoint: "cat2 400",
+    point: 300,
+    answer: "This movies main character was named Maximus.",
+    questions: [{
+        text: "What is Gladiator?",
+        isCorrect: true
+    },
+    {
+        text: "What is Scary Movie?",
+        isCorrect: true
+    },
+    {
+        text: "What is Shanghai Noon?",
         isCorrect: false
     }
     ]
