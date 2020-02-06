@@ -18,35 +18,119 @@ let score = document.querySelector('#scoredisplay');
 console.log(score);
 
 let group1B1 = {
-    answer:"The air hoses that provide air to the trailer.",
-    question1:"What are air hands?",
-    question2:"What are sad hands?",
-    question3:"What are glad hands?"
+    point: 100,
+    answer: "The air hoses that provide air to the trailer.",
+    questions: [{
+        text: "What are air hands?",
+        isCorrect: false
+    },
+     { 
+         text: "What are sad hands?",
+        isCorrect: false
+    },
+    {
+        text: "What are glad hands?",
+        isCorrect: true
+    },
+]
 }
 let group1B2 = {
-    answer:"The connector that secures a trailer to a truck.",
-    question1:"What is a trailer hitch?",
-    question2:"What is a fifth wheel?",
-    question3:"What is a link post?"  
+    point: 200,
+    answer: "The connector that secures a trailer to a truck.",
+    questions:[{
+        text: "What is a trailer hitch?",
+        isCorrect: false
+    },
+     {
+        text: "What is a fifth wheel?",
+        isCorrect: true
+    },
+     {
+        text: "What is a link post?",
+        isCorrect: false
+    },
+]
 }
 let group1B3 = {
-    answer:"The tires on the front of a semi truck.",
-    question1:"What are steer tires?",
-    question2:"What are drive tires?",
-    question3:"What are tandem tires?"
+    point: 300,
+    answer: "The tires on the front of a semi truck.",
+    questions: [{
+        text: "What are steer tires?",
+        isCorrect: true
+    },
+     {
+        text: "What are drive tires?",
+        isCorrect: false
+    },
+     {
+        text: "What are tandem tires?",
+        isCorrect: false
+    }
+]
 }
 let group1B4 = {
+    point: 400,
     answer: "A blind side back.",
-    question1: "What is backing to the left?",
-    question2: "What is backing to the right?",
-    question3: "What is backing at night?"
+    questions: [{
+        text: "What is backing to the left?",
+        isCorrect: false
+    },
+     {
+        text: "What is backing to the right?",
+        isCorrect: true
+    },
+     {
+        text: "What is backing at night?",
+        isCorrect: false
+    }
+]
 }
 let group1B5 = {
+    point: 500,
     answer: "A drop and hook.",
-    question1: "What is dropping a gear and turning?",
-    question2: "What is delivering a loaded trailer and picking up an empty one?",
-    question3: "What is dropping off your load and going to sleep?"
-};
-console.log(Object.keys(group1B5));
+    questions: [{
+        text: "What is dropping a gear and turning?",
+        isCorrect: false
+    },
+     {
+        text: "What is delivering a loaded trailer and picking up an empty one?",
+        isCorrect: true
+    },
+     {
+        text: "What is dropping off your load and going to sleep?",
+        isCorrect: false
+    }
+]
+}
+
+let group2B1 = {
+    answer: "This movie featured a car named Eleanor.",
+    point: 100,
+    questions: [{
+        text: "What is Gone in 60 seconds?",
+        isCorrect: true
+    },
+    {
+        text: "What is Meet the parents?",
+        isCorrect: false
+    },
+    {
+        text: "What is Almost famous?",
+        isCorrect: false
+    }
+    ]
+}
+
+
+group2B1.questions.map(question => {
+    if (question.isCorrect) {
+        console.log(question.text)
+    }
+});
+document.querySelector("#cat1", .100).addEventlistener(click) {
+    console.log
+}
+
+
 
 
