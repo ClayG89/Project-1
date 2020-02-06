@@ -1,21 +1,21 @@
 //when page loads prompt user to pick a category.
 function start() {
-    console.log('Please pick a category and dollar amount.');
+    // console.log('Please pick a category and dollar amount.');
 }
 start();
 
 //create variables.
 const selectCat = document.querySelectorAll('#catpick *');
-console.log(selectCat);
+// console.log(selectCat);
 
-let displayBox = document.querySelectorAll('#displaybox *');
-console.log(displayBox);
+let displayBox = document.querySelector('#displaybox');
+// console.log(displayBox);
 
 const finalQuestion = document.querySelector('#finalquestion');
-console.log(finalQuestion);
+// console.log(finalQuestion);
 
 let score = document.querySelector('#scoredisplay');
-console.log(score);
+// console.log(score);
 
 let group1B1 = {
     point: 100,
@@ -124,13 +124,20 @@ let group2B1 = {
 
 group2B1.questions.map(question => {
     if (question.isCorrect) {
-        console.log(question.text)
+        // console.log(question.text)
     }
 });
 document.querySelectorAll('#catpick').forEach(div => {
     div.addEventListener('click', (e) => {
+        let newDiv = document.createElement('DIV');
+        newDiv.style.width = "100px";
+        newDiv.style.height = "100px";
+        newDiv.style.background = "red"
+        console.log(displayBox)
+        displayBox.appendChild(newDiv);
         console.log(e.target)
     })
+
 })
  
     
