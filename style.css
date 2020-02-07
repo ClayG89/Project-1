@@ -1,7 +1,27 @@
-.wrapper {
+
+.wrapper2 #catpick{
     display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-color: blue;
+    gap: 1em;
 }
-.wrapper div{
-    background: blue;
+#displaybox {
+    display: inline-block;
+    height: 150px;
+    width: 650px;
+    
+    border: 2px solid black;
     padding: 1em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.amount {
+    height: 120px;
+    width: 120px;
+    padding: 1em;
+    border: 2px solid white;
 }

@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project1</title>
+    <script src=“https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js”></script>
 </head>
-<body>
-<div class="wrapper">
-    <header>
-        <h1>JEOPARDY</h1>
-    
-    
-    <main>
-        
-        <div id="displaybox">
 
-            <!-- <div id="group1B1">
+<body>
+    <div class="wrapper1">
+        <header>
+            <div>
+                <h1>JEOPARDY</h1>
+            </div>
+
+
+            <div id="displaybox">
+                <h3 id="answer"></h3>
+                <h4 id="1stquestion"></h4>
+                <h4 id="2ndquestion"></h4>
+                <h4 id="3rdquestion"></h4>
+
+
+                <!-- <div id="group1B1">
                 <div class="answer" value="text"></div>
                 <div type="radio" name="catA"></div>
                 <div type="radio" name="catA"></div>
@@ -167,55 +175,64 @@
                 <input type="radio"/>
                 <input type="radio"/>
                 </div>-->
-            
-            
-        </div> 
-    </header>
+
+
+            </div>
+
+        </header>
+    </div>
+    <div class="wrapper2">
         <div id="catpick">
-             
-        <div id="cat1">
-            <div class="cat1 100">$100</div>
-            <div class="cat1 200">$200</div>
-            <div class="cat1 300">$300</div>
-            <div class="cat1 400">$400</div>
-            <div class="cat1 500">$500</div>
-        </div>
-        <div id="cat2">
-            <div class="cat2 100">$100</div>
-            <div class="cat2 200">$200</div>
-            <div class="cat2 300">$300</div>
-            <div class="cat2 400">$400</div>
-            <div class="cat2 500">$500</div>
-        </div>
-        <div id="cat3">
-            <div class="cat3 100">$100</div>
-            <div class="cat3 200">$200</div>
-            <div class="cat3 300">$300</div>
-            <div class="cat3 400">$400</div>
-            <div class="cat3 500">$500</div>
-        </div>
-        <div id="cat4">
-            <div class="cat4 100">$100</div>
-            <div class="cat4 200">$200</div>
-            <div class="cat4 300">$300</div>
-            <div class="cat4 400">$400</div>
-            <div class="cat4 500">$500</div>
-        </div>
-        <div id="cat5">
-            <div class="cat5 100">$100</div>
-            <div class="cat5 200">$200</div>
-            <div class="cat5 300">$300</div>
-            <div class="cat5 400">$400</div>
-            <div class="cat5 500">$500</div>
+
+            <div id="cat1">
+                <div class="cat1-100 amount">$100</div>
+                <div class="cat1-200 amount">$200</div>
+                <div class="cat1-300 amount">$300</div>
+                <div class="cat1-400 amount">$400</div>
+                <div class="cat1-500 amount">$500</div>
+            </div>
+            <div id="cat2">
+                <div class="cat2-100 amount">$100</div>
+                <div class="cat2-200 amount">$200</div>
+                <div class="cat2-300 amount">$300</div>
+                <div class="cat2-400 amount">$400</div>
+                <div class="cat2-500 amount">$500</div>
+            </div>
+            <div id="cat3">
+                <div class="cat3-100 amount">$100</div>
+                <div class="cat3-200 amount">$200</div>
+                <div class="cat3-300 amount">$300</div>
+                <div class="cat3-400 amount">$400</div>
+                <div class="cat3-500 amount">$500</div>
+            </div>
+            <div id="cat4">
+                <div class="cat4-100 amount">$100</div>
+                <div class="cat4-200 amount">$200</div>
+                <div class="cat4-300 amount">$300</div>
+                <div class="cat4-400 amount">$400</div>
+                <div class="cat4-500 amount">$500</div>
+            </div>
+            <div id="cat5">
+                <div class="cat5-100 amount">$100</div>
+                <div class="cat5-200 amount">$200</div>
+                <div class="cat5-300 amount">$300</div>
+                <div class="cat5-400 amount">$400</div>
+                <div class="cat5-500 amount">$500</div>
+            </div>
         </div>
     </div>
 
     </main>
-    <div id="finalquestion">
-        <h2>Final Question</h2>
+    <div class="wrapper3">
+        <div id="finalquestion">
+            <h2>Final Question</h2>
+        </div>
     </div>
-    <div id="scoredisplay"></div>
-    <script src="main.js"></script>
-</div>
+    <div class="wrapper4">
+        <div id="scoredisplay"></div>
+        <script src="main.js"></script>
+    </div>
+    </div>
 </body>
+
 </html>

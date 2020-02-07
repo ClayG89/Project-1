@@ -16,10 +16,11 @@ const finalQuestion = document.querySelector('#finalquestion');
 
 let scoreBoard = document.querySelector('#scoredisplay');
 // console.log(scoreBoard);
+let objInPlay;
 let score = 0;
 
 let gameObs = [{
-    catPoint: "cat1 100",
+    catPoint: "cat1-100",
     point: 100,
     answer: "The air hoses that provide air to the trailer.",
     questions: [{
@@ -37,7 +38,7 @@ let gameObs = [{
     ]
 },
 {
-    catPoint: "cat1 200",
+    catPoint: "cat1-200",
     point: 200,
     answer: "The connector that secures a trailer to a truck.",
     questions: [{
@@ -55,7 +56,7 @@ let gameObs = [{
     ]
 },
 {
-    catPoint: "cat1 300",
+    catPoint: "cat1-300",
     point: 300,
     answer: "The tires on the front of a semi truck.",
     questions: [{
@@ -73,7 +74,7 @@ let gameObs = [{
     ]
 },
 {
-    catPoint: "cat1 400",
+    catPoint: "cat1-400",
     point: 400,
     answer: "A blind side back.",
     questions: [{
@@ -91,7 +92,7 @@ let gameObs = [{
     ]
 },
 {
-    catPoint: "cat1 500",
+    catPoint: "cat1-500",
     point: 500,
     answer: "A drop and hook.",
     questions: [{
@@ -110,7 +111,7 @@ let gameObs = [{
 },
 
 {
-    catPoint: "cat2 100",
+    catPoint: "cat2-100",
     point: 100,
     answer: "This movie featured a car named Eleanor.",
     questions: [{
@@ -128,7 +129,7 @@ let gameObs = [{
     ]
 },
 {
-    catPoint: "cat2 200",
+    catPoint: "cat2-200",
     point: 200,
     answer: "Denzel Washington starred in this grid iron classic.",
     questions: [{
@@ -146,7 +147,7 @@ let gameObs = [{
     ]
 },
 {
-    catPoint: "cat2 300",
+    catPoint: "cat2-300",
     point: 300,
     answer: "The movie Castaway starred this iconic actor.",
     questions: [{
@@ -164,8 +165,8 @@ let gameObs = [{
     ]
 },
 {
-    catPoint: "cat2 400",
-    point: 300,
+    catPoint: "cat2-400",
+    point: 400,
     answer: "This movies main character was named Maximus.",
     questions: [{
         text: "What is Gladiator?",
@@ -182,8 +183,8 @@ let gameObs = [{
     ]
 },
 {
-    catPoint: "cat2 500",
-    point: 300,
+    catPoint: "cat2-500",
+    point: 500,
     answer: "Harrison Ford and Michelle Pfeiffer co-starred in this thriller.",
     questions: [{
         text: "What is Mission Impossible?",
@@ -213,8 +214,10 @@ document.querySelectorAll('#catpick').forEach(div => {
         //if e.target clicked, display created div in displayBox.
         displayBox.appendChild(newDiv);
         gameObs.forEach(obj => {
-            if (obj.catPoint === e.target.className) {
-                console.log(obj.point)
+            // if (obj.catPoint === e.target.className) {
+                if (e.target.classList.contains(obj.catPoint)) {
+                objInPlay = obj;
+                console.log(objInPlay)
                 score = score + obj.point;
             } 
         })
