@@ -218,7 +218,7 @@ document.querySelectorAll('#catpick').forEach(div => {
                 if (e.target.classList.contains(obj.catPoint)) {
                 objInPlay = obj;
                 console.log(objInPlay)
-                score = score + obj.point;
+               // score = score + obj.point;
             } 
         })
         let rightQuestion = (gameObs)
@@ -236,7 +236,14 @@ document.querySelectorAll('#catpick').forEach(div => {
                             console.log(score + ' ' + 'Good game.')
                         }
                     }
+    document.querySelector('#answer').innerHTML = "object.answer";
+    document.querySelector('#1stquestion').innerHTML = "object.questions[0]";
+    document.querySelector('#2ndquestion').innerHTML = "object.questions[1]";
+    document.querySelector('#3rdquestion').innerHTML = "object.questions[2]";
+    console.log(document.querySelector('#answer').innerHTML)
+    
 
+    
                 }
             })
         })  
