@@ -1,0 +1,7 @@
+.wrapper {
+    display: grid;
+}
+.wrapper div{
+    background: blue;
+    padding: 1em;
+}

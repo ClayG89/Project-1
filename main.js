@@ -216,24 +216,25 @@ document.querySelectorAll('#catpick').forEach(div => {
             if (obj.catPoint === e.target.className) {
                 console.log(obj.point)
                 score = score + obj.point;
-            } else {
-            if (score < 2000) {
-                console.log(score);
-               start();
-           } else {
-                //console.log(obj)
-                if (score >= 2000) {
-                    console.log(finalQuestion)
+            } 
+        })
+        let rightQuestion = (gameObs)
+                if (score < 2000) {
+                    console.log(score);
+                    start();
                 } else {
-                    if (score === 0) {
-                        console.log("Game over.")
+                   // console.log(rightQuestion)
+                    if (score >= 2000) {
+                        console.log(finalQuestion)
                     } else {
-                        console.log(score + ' ' + 'Good game.')
+                        if (score === 0) {
+                            console.log("Game over.")
+                        } else {
+                            console.log(score + ' ' + 'Good game.')
+                        }
                     }
+
                 }
-               
-            }
-        }
-    })
-})
-})
+            })
+        })  
+    
