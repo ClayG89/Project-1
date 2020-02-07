@@ -216,6 +216,7 @@ document.querySelectorAll('#catpick').forEach(div => {
             if (obj.catPoint === e.target.className) {
                 console.log(obj.point)
                 score = score + obj.point;
+            }
                 //console.log(obj)
                 if (score >= 2000) {
                     console.log(finalQuestion)
@@ -226,17 +227,8 @@ document.querySelectorAll('#catpick').forEach(div => {
                         console.log(score + ' ' + 'Good game.')
                     }
                 }
-            
-            } 
-            console.log(score)
+                console.log(score);
+            })
         })
     })
-
-})
-
-
-
-
-
-
-
+            
