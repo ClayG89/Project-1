@@ -14,8 +14,9 @@ let displayBox = document.querySelector('#displaybox');
 const finalQuestion = document.querySelector('#finalquestion');
 // console.log(finalQuestion);
 
-let score = document.querySelector('#scoredisplay');
-// console.log(score);
+let scoreBoard = document.querySelector('#scoredisplay');
+// console.log(scoreBoard);
+let score = 0;
 
 let gameObs = [{
     catPoint: "cat1 100",
@@ -172,10 +173,28 @@ let gameObs = [{
     },
     {
         text: "What is Scary Movie?",
-        isCorrect: true
+        isCorrect: false
     },
     {
         text: "What is Shanghai Noon?",
+        isCorrect: false
+    }
+    ]
+},
+{
+    catPoint: "cat2 500",
+    point: 300,
+    answer: "Harrison Ford and Michelle Pfeiffer co-starred in this thriller.",
+    questions: [{
+        text: "What is Mission Impossible?",
+        isCorrect: false
+    },
+    {
+        text: "What is Charlie's Angels?",
+        isCorrect: false
+    },
+    {
+        text: "What is What lies beneath?",
         isCorrect: false
     }
     ]
@@ -195,7 +214,9 @@ document.querySelectorAll('#catpick').forEach(div => {
         displayBox.appendChild(newDiv);
         gameObs.forEach(obj => {
             if (obj.catPoint === e.target.className) {
-                console.log(obj)
+                console.log(obj.point)
+                let score = score + obj.point;
+                //console.log(obj)
             }
         })
     })
