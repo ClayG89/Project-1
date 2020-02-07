@@ -215,9 +215,20 @@ document.querySelectorAll('#catpick').forEach(div => {
         gameObs.forEach(obj => {
             if (obj.catPoint === e.target.className) {
                 console.log(obj.point)
-                let score = score + obj.point;
+                score = score + obj.point;
                 //console.log(obj)
-            }
+                if (score >= 2000) {
+                    console.log(finalQuestion)
+                }else {
+                    if (score === 0) {
+                        console.log("Game over.")
+                    }else {
+                        console.log(score + ' ' + 'Good game.')
+                    }
+                }
+            
+            } 
+            console.log(score)
         })
     })
 
