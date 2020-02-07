@@ -216,19 +216,24 @@ document.querySelectorAll('#catpick').forEach(div => {
             if (obj.catPoint === e.target.className) {
                 console.log(obj.point)
                 score = score + obj.point;
-            }
+            } else {
+            if (score < 2000) {
+                console.log(score);
+               start();
+           } else {
                 //console.log(obj)
                 if (score >= 2000) {
                     console.log(finalQuestion)
-                }else {
+                } else {
                     if (score === 0) {
                         console.log("Game over.")
-                    }else {
+                    } else {
                         console.log(score + ' ' + 'Good game.')
                     }
                 }
-                console.log(score);
-            })
-        })
+               
+            }
+        }
     })
-            
+})
+})
