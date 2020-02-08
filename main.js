@@ -220,6 +220,11 @@ document.querySelectorAll('#catpick').forEach(div => {
                 console.log(objInPlay)
                // score = score + obj.point;
             } 
+            document.querySelector('#answer').innerHTML = "object.answer";
+    document.querySelector('#firstquestion').innerHTML = "object.questions[0]";
+    document.querySelector('#secondquestion').innerHTML = "object.questions[1]";
+    document.querySelector('#thirdquestion').innerHTML = "object.questions[2]";
+    console.log(document.querySelector('#answer').innerHTML)
         })
         let rightQuestion = (gameObs)
                 if (score < 2000) {
@@ -236,11 +241,6 @@ document.querySelectorAll('#catpick').forEach(div => {
                             console.log(score + ' ' + 'Good game.')
                         }
                     }
-    document.querySelector('#answer').innerHTML = "object.answer";
-    document.querySelector('#1stquestion').innerHTML = "object.questions[0]";
-    document.querySelector('#2ndquestion').innerHTML = "object.questions[1]";
-    document.querySelector('#3rdquestion').innerHTML = "object.questions[2]";
-    console.log(document.querySelector('#answer').innerHTML)
     
 
     
