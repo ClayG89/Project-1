@@ -255,58 +255,113 @@ let gameObs = [{
         ]
 },
 {
-                    catPoint: "cat3-400",
-                    point: 400,
-                    answer: "The Utah Jazz relocated from this city.",
-                    questions: [{
-                        text: "What is Baton Rouge, LA?",
-                        isCorrect: false
-                    },
-                    {
-                        text: "What is Tampa Bay, FL?",
-                        isCorrect: false
-                    },
-                    {
-                        text: "What is New Orleans, LA?",
-                        isCorrect: true
-                    }
-                    ]
-                },
-                {
-                        catPoint: "cat3-500",
-                        point: 500,
-                        answer: "This team plays it's home games at FedEx Forum.",
-                        questions: [{
-                            text: "Who are the Miami Heat?",
-                            isCorrect: false
-                        },
-                        {
-                            text: "Who are the Memphis Grizzlies?",
-                            isCorrect: false
-                        },
-                        {
-                            text: "Who are the Dallas Mavericks?",
-                            isCorrect: true
-                        }
-                        ]
-                    },
-                    {
-                            catPoint: "cat4-100",
-                            point: 100,
-                            answer: "In 2018 he announced that his 3-year Farewell Yellow Brick Road tour would be his last '.",
-                            questions: [{
-                                text: "Who is Charles Barkley?",
-                                isCorrect: false
-                            },
-                            {
-                                text: "Who is Dennis Rodman?",
-                                isCorrect: false
-                            },
-                            {
-                                text: "Who is Kevin Garnett?",
-                                isCorrect: true
-                            }
-                            ]
+    catPoint: "cat3-400",
+    point: 400,
+    answer: "The Utah Jazz relocated from this city.",
+    questions: [{
+            text: "What is Baton Rouge, LA?",
+            isCorrect: false
+        },
+        {
+            text: "What is Tampa Bay, FL?",
+            isCorrect: false
+        },
+        {
+            text: "What is New Orleans, LA?",
+            isCorrect: true
+        }
+        ]
+},
+{
+    catPoint: "cat3-500",
+    point: 500,
+    answer: "This team plays it's home games at FedEx Forum.",
+    questions: [{
+            text: "Who are the Miami Heat?",
+            isCorrect: false
+        },
+        {
+            text: "Who are the Memphis Grizzlies?",
+            isCorrect: true
+        },
+        {
+            text: "Who are the Dallas Mavericks?",
+            isCorrect: false
+        }
+        ]
+},
+{
+    catPoint: "cat4-100",
+    point: 100,
+    answer: "In 2018 he announced that his 3-year Farewell Yellow Brick Road tour would be his last.",
+    questions: [{
+            text: "Who is Paul Simon?",
+            isCorrect: false
+        },
+        {
+            text: "Who is LL Cool J?",
+            isCorrect: false
+        },
+        {
+            text: "Who is Elton John?",
+            isCorrect: true
+        }
+        ]
+},
+{
+    catPoint: "cat4-200",
+    point: 200,
+    answer: "A song by Morrissey is called this 4-letter woodwind Concerto.",
+    questions: [{
+            text: "What is an Oboe?",
+            isCorrect: true
+        },
+        {
+            text: "What is a lute?",
+            isCorrect: false
+        },
+        {
+            text: "What is a fife?",
+            isCorrect: false
+        }
+        ]
+},
+{
+    catPoint: "cat4-300",
+    point: 300,
+    answer: "This mechanical device is used by musicians to keep time.",
+    questions: [{
+            text: "What is a metronome?",
+            isCorrect: true
+        },
+        {
+            text: "What is a tempo-moderator?",
+            isCorrect: false
+        },
+        {
+            text: "What is an auto-adjust time-moderator?",
+            isCorrect: false
+        }
+        ]
+},
+{
+    catPoint: "cat4-400",
+    point: 400,
+    answer: "This tune from Frozen begins The snow glows white on thr mountain tonight.",
+    questions: [{
+            text: "What is For the first time in forever?",
+            isCorrect: false
+        },
+        {
+            text: "What is Let it go?",
+            isCorrect: false
+        },
+        {
+            text: "What is Elsa and Anna?",
+            isCorrect: true
+        }
+        ]
+
 }
 ]
            
@@ -325,7 +380,7 @@ document.querySelectorAll('#catpick').forEach(div => {
                 if (e.target.classList.contains(obj.catPoint)) {
                 objInPlay = obj;
                 
-                console.log(objInPlay.questions)
+                console.log(objInPlay)
                // score = score + obj.point;
                // console.log(obj)
             } 
@@ -335,7 +390,7 @@ document.querySelectorAll('#catpick').forEach(div => {
             document.querySelector('#firstquestion').innerHTML = (objInPlay.questions[0].text);
             document.querySelector('#secondquestion').innerHTML = (objInPlay.questions[1].text);
             document.querySelector('#thirdquestion').innerHTML = (objInPlay.questions[2].text);
-           console.log(document.querySelector('#answer').innerHTML)
+           //console.log(document.querySelector('#answer').innerHTML)
            // console.log(document.querySelector('#firstquestion').innerHTML)
         })
         let rightQuestion = (gameObs)
