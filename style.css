@@ -1,27 +1,54 @@
+.wrapper2 {
+    margin: auto;
+    height: 975px;
+    width: 900px;
+}
 
+.wrapper2 .categories {
+    display: grid;
+    grid-template-columns: repeat(5, 155px);
+    grid-template-rows: 75px;
+    background-color: blue;
+    gap: 1em ;
+    padding: 1em;
+}
 .wrapper2 #catpick{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 155px);
+    grid-template-rows: repeat(5, 155px);
     background-color: blue;
     gap: 1em;
+    padding: 1em;
 }
 #displaybox {
     display: inline-block;
     height: 150px;
-    width: 650px;
-    
+    width: 800px; 
     border: 2px solid black;
-    padding: 1em;
+    padding: 1.5em;
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 1em;
 }
 .amount {
-    height: 120px;
+    height: 80px;
     width: 120px;
     padding: 1em;
     border: 2px solid white;
+    font-size: 24px;
+}
+.secrow {
+    height: 70px;
+    width: 120px;
+    padding: 1em;
+    border: 2px solid white;
+    color: white;
+    font-size: 24px;
+}
+.wrapper3 {
+    display: grid;
+    
 }

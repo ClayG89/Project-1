@@ -201,13 +201,12 @@ let gameObs = [{
     ]
 }
 ]
-
-
-// group2B1.questions.map(question => {
-//     if (question.isCorrect) {
-//         console.log(question.text)
-//     }
-// });
+           
+    // group2B1.questions.map(question => {
+    // if (question.isCorrect) {
+    //     console.log(question.text)
+    //}
+ //});
 document.querySelectorAll('#catpick').forEach(div => {
     div.addEventListener('click', (e) => {
         let newDiv = document.createElement('DIV');
@@ -217,14 +216,17 @@ document.querySelectorAll('#catpick').forEach(div => {
             // if (obj.catPoint === e.target.className) {
                 if (e.target.classList.contains(obj.catPoint)) {
                 objInPlay = obj;
+                
                 console.log(objInPlay)
                // score = score + obj.point;
+               // console.log(obj)
             } 
-            document.querySelector('#answer').innerHTML = "object.answer";
-    document.querySelector('#firstquestion').innerHTML = "object.questions[0]";
-    document.querySelector('#secondquestion').innerHTML = "object.questions[1]";
-    document.querySelector('#thirdquestion').innerHTML = "object.questions[2]";
-    console.log(document.querySelector('#answer').innerHTML)
+            document.querySelector('#answer').innerHTML = ('Object.answer');
+            document.querySelector('#firstquestion').innerHTML = ('Object.question[0]');
+            document.querySelector('#secondquestion').innerHTML = "obj.question[1]";
+            document.querySelector('#thirdquestion').innerHTML = "obj.question[2]";
+            console.log(document.querySelector('#answer').innerHTML)
+            
         })
         let rightQuestion = (gameObs)
                 if (score < 2000) {
