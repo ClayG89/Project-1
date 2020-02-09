@@ -34,7 +34,7 @@ let gameObs = [{
     {
         text: "What are glad hands?",
         isCorrect: true
-    },
+    }
     ]
 },
 {
@@ -196,9 +196,117 @@ let gameObs = [{
     },
     {
         text: "What is What lies beneath?",
+        isCorrect: true
+    }
+    ]
+},
+{
+    catPoint: "cat3-100",
+    point: 100,
+    answer: "This team won three consecutive NBA championships, twice.",
+    questions: [{
+        text: "Who are the Chicago Bulls?",
+        isCorrect: true
+    },
+    {
+        text: "Who are the Boston Celtics?",
+        isCorrect: false
+    },
+    {
+        text: "Who are the Golden State Warriors?",
         isCorrect: false
     }
     ]
+},
+{
+    catPoint: "cat3-200",
+    point: 200,
+    answer: "This retired player was nicknamed the 'Big Ticket'.",
+    questions: [{
+        text: "Who is Charles Barkley?",
+        isCorrect: false
+    },
+    {
+            text: "Who is Dennis Rodman?",
+            isCorrect: false
+        },
+        {
+            text: "Who is Kevin Garnett?",
+            isCorrect: true
+        }
+        ]
+},
+{
+    catPoint: "cat3-300",
+    point: 300,
+    answer: "Greg Poppovich has been the head coach of this team for over 20 years.  '.",
+    questions: [{
+            text: "Who are the Sam Antonio Spurs?",
+            isCorrect: true
+        },
+        {
+            text: "Who are the Houston Rockets?",
+            isCorrect: false
+        },
+        {
+            text: "Who are the Dallas Mavericks?",
+            isCorrect: false
+        }
+        ]
+},
+{
+                    catPoint: "cat3-400",
+                    point: 400,
+                    answer: "The Utah Jazz relocated from this city.",
+                    questions: [{
+                        text: "What is Baton Rouge, LA?",
+                        isCorrect: false
+                    },
+                    {
+                        text: "What is Tampa Bay, FL?",
+                        isCorrect: false
+                    },
+                    {
+                        text: "What is New Orleans, LA?",
+                        isCorrect: true
+                    }
+                    ]
+                },
+                {
+                        catPoint: "cat3-500",
+                        point: 500,
+                        answer: "This team plays it's home games at FedEx Forum.",
+                        questions: [{
+                            text: "Who are the Miami Heat?",
+                            isCorrect: false
+                        },
+                        {
+                            text: "Who are the Memphis Grizzlies?",
+                            isCorrect: false
+                        },
+                        {
+                            text: "Who are the Dallas Mavericks?",
+                            isCorrect: true
+                        }
+                        ]
+                    },
+                    {
+                            catPoint: "cat4-100",
+                            point: 100,
+                            answer: "In 2018 he announced that his 3-year Farewell Yellow Brick Road tour would be his last '.",
+                            questions: [{
+                                text: "Who is Charles Barkley?",
+                                isCorrect: false
+                            },
+                            {
+                                text: "Who is Dennis Rodman?",
+                                isCorrect: false
+                            },
+                            {
+                                text: "Who is Kevin Garnett?",
+                                isCorrect: true
+                            }
+                            ]
 }
 ]
            
@@ -217,16 +325,18 @@ document.querySelectorAll('#catpick').forEach(div => {
                 if (e.target.classList.contains(obj.catPoint)) {
                 objInPlay = obj;
                 
-                console.log(objInPlay)
+                console.log(objInPlay.questions)
                // score = score + obj.point;
                // console.log(obj)
             } 
-            document.querySelector('#answer').innerHTML = ('Object.answer');
-            document.querySelector('#firstquestion').innerHTML = ('Object.question[0]');
-            document.querySelector('#secondquestion').innerHTML = "obj.question[1]";
-            document.querySelector('#thirdquestion').innerHTML = "obj.question[2]";
-            console.log(document.querySelector('#answer').innerHTML)
-            
+        
+
+            document.querySelector('#answer').innerHTML = (objInPlay.answer);
+            document.querySelector('#firstquestion').innerHTML = (objInPlay.questions[0].text);
+            document.querySelector('#secondquestion').innerHTML = (objInPlay.questions[1].text);
+            document.querySelector('#thirdquestion').innerHTML = (objInPlay.questions[2].text);
+           console.log(document.querySelector('#answer').innerHTML)
+           // console.log(document.querySelector('#firstquestion').innerHTML)
         })
         let rightQuestion = (gameObs)
                 if (score < 2000) {
