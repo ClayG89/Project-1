@@ -354,11 +354,47 @@ let gameObs = [{
         },
         {
             text: "What is Let it go?",
-            isCorrect: false
+            isCorrect: true
         },
         {
             text: "What is Elsa and Anna?",
+            isCorrect: false
+        }
+        ]
+},
+{
+    catPoint: "cat4-500",
+    point: 500,
+    answer: "Let's Groove with this R&B group that had a hit with Shining Star.",
+    questions: [{
+            text: "Who is Cameo?",
+            isCorrect: false
+        },
+        {
+            text: "Who is Jodeci?",
+            isCorrect: false
+        },
+        {
+            text: "Who is Earth Wind & Fire?",
             isCorrect: true
+        }
+        ]
+},
+{
+    catPoint: "cat5-100",
+    point: 100,
+    answer: "It can't fly or breathe fire but this largest living lizard has a venomous bite that inhibits blood clotting.",
+    questions: [{
+            text: "What is The Rock Monitor?",
+            isCorrect: false
+        },
+        {
+            text: "What is The Komodo Dragon?",
+            isCorrect: true
+        },
+        {
+            text: "What is the Gila Monster?",
+            isCorrect: false
         }
         ]
 
