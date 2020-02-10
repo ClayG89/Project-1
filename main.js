@@ -279,16 +279,16 @@ let gameObs = [{
     questions: [{
             text: "Who are the Miami Heat?",
             isCorrect: false
-        },
-        {
+    },
+    {
             text: "Who are the Memphis Grizzlies?",
             isCorrect: true
-        },
-        {
+    },
+    {
             text: "Who are the Dallas Mavericks?",
             isCorrect: false
-        }
-        ]
+    }
+    ]
 },
 {
     catPoint: "cat4-100",
@@ -297,16 +297,16 @@ let gameObs = [{
     questions: [{
             text: "Who is Paul Simon?",
             isCorrect: false
-        },
-        {
+    },
+    {
             text: "Who is LL Cool J?",
             isCorrect: false
-        },
-        {
+    },
+    {
             text: "Who is Elton John?",
             isCorrect: true
-        }
-        ]
+    }
+    ]
 },
 {
     catPoint: "cat4-200",
@@ -315,16 +315,16 @@ let gameObs = [{
     questions: [{
             text: "What is an Oboe?",
             isCorrect: true
-        },
-        {
+    },
+    {
             text: "What is a lute?",
             isCorrect: false
-        },
-        {
+    },
+    {
             text: "What is a fife?",
             isCorrect: false
-        }
-        ]
+    }
+    ]
 },
 {
     catPoint: "cat4-300",
@@ -333,16 +333,16 @@ let gameObs = [{
     questions: [{
             text: "What is a metronome?",
             isCorrect: true
-        },
-        {
+    },
+    {
             text: "What is a tempo-moderator?",
             isCorrect: false
-        },
-        {
+    },
+    {
             text: "What is an auto-adjust time-moderator?",
             isCorrect: false
-        }
-        ]
+    }
+    ]
 },
 {
     catPoint: "cat4-400",
@@ -351,16 +351,16 @@ let gameObs = [{
     questions: [{
             text: "What is For the first time in forever?",
             isCorrect: false
-        },
-        {
+    },
+    {
             text: "What is Let it go?",
             isCorrect: true
-        },
-        {
+    },
+    {
             text: "What is Elsa and Anna?",
             isCorrect: false
-        }
-        ]
+    }
+    ]
 },
 {
     catPoint: "cat4-500",
@@ -369,16 +369,16 @@ let gameObs = [{
     questions: [{
             text: "Who is Cameo?",
             isCorrect: false
-        },
-        {
+    },
+    {
             text: "Who is Jodeci?",
             isCorrect: false
-        },
-        {
+    },
+    {
             text: "Who is Earth Wind & Fire?",
             isCorrect: true
-        }
-        ]
+    }
+    ]
 },
 {
     catPoint: "cat5-100",
@@ -387,16 +387,16 @@ let gameObs = [{
     questions: [{
             text: "What is The Rock Monitor?",
             isCorrect: false
-        },
-        {
+    },
+    {
             text: "What is The Komodo Dragon?",
             isCorrect: true
-        },
-        {
+    },
+    {
             text: "What is the Gila Monster?",
             isCorrect: false
-        }
-        ]
+    }
+    ]
 },
 {
     catPoint: "cat5-200",
@@ -405,34 +405,70 @@ let gameObs = [{
     questions: [{
             text: "What is July?",
             isCorrect: true
-        },
-        {
+    },
+    {
             text: "What is August?",
             isCorrect: false
-        },
-        {
+    },
+    {
             text: "What is January?",
             isCorrect: false
-        }
-        ]
+    }
+    ]
 },
 {
-    catPoint: "cat4-100",
-    point: 100,
-    answer: "In 2018 he announced that his 3-year Farewell Yellow Brick Road tour would be his last '.",
+    catPoint: "cat5-300",
+    point: 300,
+    answer: "An appliance marked 1000 watts and 250 volts requires a current of this many amps.",
     questions: [{
-            text: "Who is Paul Simon?",
+            text: "What is 40?",
             isCorrect: false
-        },
-        {
-            text: "Who is LL Cool J?",
-            isCorrect: false
-        },
-        {
-            text: "Who is Elton John?",
+    },
+    {
+            text: "What is 4?",
             isCorrect: true
-        }
-        ]
+    },
+    {
+            text: "What is 400?",
+            isCorrect: false
+    }
+    ]
+},
+{
+    catPoint: "cat5-400",
+    point: 400,
+    answer: "18399 feet down & probably pretty darn cold the Malloy Deep is the deepest point in this ocean.",
+    questions: [{
+            text: "What is The Indian Ocean?",
+            isCorrect: false
+    },
+    {
+            text: "What is The Pacific Ocean?",
+            isCorrect: false
+    },
+    {
+            text: "What is The Artic Ocean?",
+            isCorrect: true
+    }
+    ]
+},
+{
+    catPoint: "cat5-500",
+    point: 500,
+    answer: "Dinosaurs died out in this geological era that means middle life.",
+    questions: [{
+            text: "What is The Mesozoic Era?",
+            isCorrect: true
+    },
+    {
+            text: "What is The Caenozoic Era?",
+            isCorrect: false
+    },
+    {
+            text: "What is The Palaeozoic Era",
+            isCorrect: false
+    }
+    ]
 }
 ]
            
