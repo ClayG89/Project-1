@@ -28,7 +28,7 @@
     display: inline-block;
     height: 150px;
     width: 900px; 
-    border: 2px solid black;
+    border: 7px solid black;
     padding: .5em;
     background-color: white;
     
@@ -79,18 +79,18 @@ body {
     background-color: red;
     height: 1500px;
 }
-/*.wrapper4 {
+.wrapper4 {
     padding: 1em;
     display: grid;
-    width: 900px;
+    width: 930px;
     height: 250px;
     background: black;
-    margin: auto;*/
+    margin: auto;
 }
-/*.wrapper4  #scoredisplay {
+.wrapper4  #scoredisplay {
 width: 300px;
 height: 135px;
 border: 7px solid red;
 margin: auto;
 background: white;
-}*/
+}

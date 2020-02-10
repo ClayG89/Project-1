@@ -16,6 +16,7 @@ const finalQuestion = document.querySelector('#finalquestion');
 
 let scoreBoard = document.querySelector('#scoredisplay');
 // console.log(scoreBoard);
+
 let objInPlay;
 let score = 0;
 
@@ -477,48 +478,68 @@ let gameObs = [{
     //     console.log(question.text)
     //}
  //});
-document.querySelectorAll('#catpick').forEach(div => {
+const catPick = document.getElementById('catpick').querySelectorAll('.amount')
+// console.log(catPick)
+// console.log(gameObs)
+catPick.forEach(div => {
+
+// document.querySelectorAll('#catpick').forEach(div => {
     div.addEventListener('click', (e) => {
         let newDiv = document.createElement('DIV');
         //if e.target clicked, display created div in displayBox.
         displayBox.appendChild(newDiv);
+        console.log(gameObs)
         gameObs.forEach(obj => {
+            console.log(obj)
             // if (obj.catPoint === e.target.className) {
                 if (e.target.classList.contains(obj.catPoint)) {
                 objInPlay = obj;
                 
-                console.log(objInPlay)
+                // console.log(objInPlay)
                // score = score + obj.point;
                // console.log(obj)
             } 
+        })
         
-
             document.querySelector('#answer').innerHTML = (objInPlay.answer);
-            document.querySelector('#firstquestion').innerHTML = (objInPlay.questions[0].text);
+            document.querySelector('#firstquestion').innerHTML = (objInPlay.questions[0].text)
             document.querySelector('#secondquestion').innerHTML = (objInPlay.questions[1].text);
             document.querySelector('#thirdquestion').innerHTML = (objInPlay.questions[2].text);
            //console.log(document.querySelector('#answer').innerHTML)
            // console.log(document.querySelector('#firstquestion').innerHTML)
+    })
+})
+        let questOne = document.querySelector('#firstquestion');
+        let questTwo = document.querySelector('#secondquestion');
+        let questThree = document.querySelector('#thirdquestion');
+        questOne.addEventListener('click', (e) => {
+            objInPlay.questions.map(question => {
+             if (question.isCorrect) {
+                score = score + obj.point;
+                console.log(score)
+            }
+            })
         })
-        let rightQuestion = (gameObs)
-                if (score < 2000) {
-                    console.log(score);
-                    start();
-                } else {
-                   // console.log(rightQuestion)
-                    if (score >= 2000) {
-                        console.log(finalQuestion)
-                    } else {
-                        if (score === 0) {
-                            console.log("Game over.")
-                        } else {
-                            console.log(score + ' ' + 'Good game.')
-                        }
-                    }
+
+        // let rightQuestion = (gameObs) 
+        //         if (score < 2000) {
+        //             console.log(score);
+        //             start();
+        //         } else {
+        //            // console.log(rightQuestion)
+        //             if (score >= 2000) {
+        //                 console.log(finalQuestion)
+        //             } else {
+        //                 if (score === 0) {
+        //                     console.log("Game over.")
+        //                 } else {
+        //                     console.log(score + ' ' + 'Good game.')
+        //                 }
+        //             }
     
 
     
-                }
-            })
-        })  
+        //         }
+        //     })
+        // })  
     
