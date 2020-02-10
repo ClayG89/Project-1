@@ -7,14 +7,13 @@ start();
 //create variables.
 const selectCat = document.querySelectorAll('#catpick *');
 // console.log(selectCat);
-
-let displayBox = document.querySelector('#displaybox');
-// console.log(displayBox);
+const displayBox = document.querySelector('#displaybox')
+const displayBoxList = document.getElementById('displaybox').querySelectorAll('.db');
+console.log(displayBoxList);
 
 const finalQuestion = document.querySelector('#finalquestion');
 // console.log(finalQuestion);
 
-let scoreBoard = document.querySelector('#scoredisplay');
 // console.log(scoreBoard);
 
 let objInPlay;
@@ -228,12 +227,12 @@ let gameObs = [{
         isCorrect: false
     },
     {
-            text: "Who is Dennis Rodman?",
-            isCorrect: false
+        text: "Who is Dennis Rodman?",
+        isCorrect: false
     },
     {
-            text: "Who is Kevin Garnett?",
-            isCorrect: true
+        text: "Who is Kevin Garnett?",
+        isCorrect: true
     }
     ]
 },
@@ -242,16 +241,16 @@ let gameObs = [{
     point: 300,
     answer: "Greg Poppovich has been the head coach of this team for over 20 years.  '.",
     questions: [{
-            text: "Who are the Sam Antonio Spurs?",
-            isCorrect: true
+        text: "Who are the Sam Antonio Spurs?",
+        isCorrect: true
     },
     {
-            text: "Who are the Houston Rockets?",
-            isCorrect: false
+        text: "Who are the Houston Rockets?",
+        isCorrect: false
     },
     {
-            text: "Who are the Dallas Mavericks?",
-            isCorrect: false
+        text: "Who are the Dallas Mavericks?",
+        isCorrect: false
     }
     ]
 },
@@ -260,16 +259,16 @@ let gameObs = [{
     point: 400,
     answer: "The Utah Jazz relocated from this city.",
     questions: [{
-            text: "What is Baton Rouge, LA?",
-            isCorrect: false
+        text: "What is Baton Rouge, LA?",
+        isCorrect: false
     },
     {
-            text: "What is Tampa Bay, FL?",
-            isCorrect: false
+        text: "What is Tampa Bay, FL?",
+        isCorrect: false
     },
     {
-            text: "What is New Orleans, LA?",
-            isCorrect: true
+        text: "What is New Orleans, LA?",
+        isCorrect: true
     }
     ]
 },
@@ -278,16 +277,16 @@ let gameObs = [{
     point: 500,
     answer: "This team plays it's home games at FedEx Forum.",
     questions: [{
-            text: "Who are the Miami Heat?",
-            isCorrect: false
+        text: "Who are the Miami Heat?",
+        isCorrect: false
     },
     {
-            text: "Who are the Memphis Grizzlies?",
-            isCorrect: true
+        text: "Who are the Memphis Grizzlies?",
+        isCorrect: true
     },
     {
-            text: "Who are the Dallas Mavericks?",
-            isCorrect: false
+        text: "Who are the Dallas Mavericks?",
+        isCorrect: false
     }
     ]
 },
@@ -296,16 +295,16 @@ let gameObs = [{
     point: 100,
     answer: "In 2018 he announced that his 3-year Farewell Yellow Brick Road tour would be his last.",
     questions: [{
-            text: "Who is Paul Simon?",
-            isCorrect: false
+        text: "Who is Paul Simon?",
+        isCorrect: false
     },
     {
-            text: "Who is LL Cool J?",
-            isCorrect: false
+        text: "Who is LL Cool J?",
+        isCorrect: false
     },
     {
-            text: "Who is Elton John?",
-            isCorrect: true
+        text: "Who is Elton John?",
+        isCorrect: true
     }
     ]
 },
@@ -314,16 +313,16 @@ let gameObs = [{
     point: 200,
     answer: "A song by Morrissey is called this 4-letter woodwind Concerto.",
     questions: [{
-            text: "What is an Oboe?",
-            isCorrect: true
+        text: "What is an Oboe?",
+        isCorrect: true
     },
     {
-            text: "What is a lute?",
-            isCorrect: false
+        text: "What is a lute?",
+        isCorrect: false
     },
     {
-            text: "What is a fife?",
-            isCorrect: false
+        text: "What is a fife?",
+        isCorrect: false
     }
     ]
 },
@@ -332,16 +331,16 @@ let gameObs = [{
     point: 300,
     answer: "This mechanical device is used by musicians to keep time.",
     questions: [{
-            text: "What is a metronome?",
-            isCorrect: true
+        text: "What is a metronome?",
+        isCorrect: true
     },
     {
-            text: "What is a tempo-moderator?",
-            isCorrect: false
+        text: "What is a tempo-moderator?",
+        isCorrect: false
     },
     {
-            text: "What is an auto-adjust time-moderator?",
-            isCorrect: false
+        text: "What is an auto-adjust time-moderator?",
+        isCorrect: false
     }
     ]
 },
@@ -350,16 +349,16 @@ let gameObs = [{
     point: 400,
     answer: "This tune from Frozen begins The snow glows white on thr mountain tonight.",
     questions: [{
-            text: "What is For the first time in forever?",
-            isCorrect: false
+        text: "What is For the first time in forever?",
+        isCorrect: false
     },
     {
-            text: "What is Let it go?",
-            isCorrect: true
+        text: "What is Let it go?",
+        isCorrect: true
     },
     {
-            text: "What is Elsa and Anna?",
-            isCorrect: false
+        text: "What is Elsa and Anna?",
+        isCorrect: false
     }
     ]
 },
@@ -368,16 +367,16 @@ let gameObs = [{
     point: 500,
     answer: "Let's Groove with this R&B group that had a hit with Shining Star.",
     questions: [{
-            text: "Who is Cameo?",
-            isCorrect: false
+        text: "Who is Cameo?",
+        isCorrect: false
     },
     {
-            text: "Who is Jodeci?",
-            isCorrect: false
+        text: "Who is Jodeci?",
+        isCorrect: false
     },
     {
-            text: "Who is Earth Wind & Fire?",
-            isCorrect: true
+        text: "Who is Earth Wind & Fire?",
+        isCorrect: true
     }
     ]
 },
@@ -386,16 +385,16 @@ let gameObs = [{
     point: 100,
     answer: "It can't fly or breathe fire but this largest living lizard has a venomous bite that inhibits blood clotting.",
     questions: [{
-            text: "What is The Rock Monitor?",
-            isCorrect: false
+        text: "What is The Rock Monitor?",
+        isCorrect: false
     },
     {
-            text: "What is The Komodo Dragon?",
-            isCorrect: true
+        text: "What is The Komodo Dragon?",
+        isCorrect: true
     },
     {
-            text: "What is the Gila Monster?",
-            isCorrect: false
+        text: "What is the Gila Monster?",
+        isCorrect: false
     }
     ]
 },
@@ -404,16 +403,16 @@ let gameObs = [{
     point: 200,
     answer: "Seems counterintuitive but the Earth is farthest from the sun during this month",
     questions: [{
-            text: "What is July?",
-            isCorrect: true
+        text: "What is July?",
+        isCorrect: true
     },
     {
-            text: "What is August?",
-            isCorrect: false
+        text: "What is August?",
+        isCorrect: false
     },
     {
-            text: "What is January?",
-            isCorrect: false
+        text: "What is January?",
+        isCorrect: false
     }
     ]
 },
@@ -422,16 +421,16 @@ let gameObs = [{
     point: 300,
     answer: "An appliance marked 1000 watts and 250 volts requires a current of this many amps.",
     questions: [{
-            text: "What is 40?",
-            isCorrect: false
+        text: "What is 40?",
+        isCorrect: false
     },
     {
-            text: "What is 4?",
-            isCorrect: true
+        text: "What is 4?",
+        isCorrect: true
     },
     {
-            text: "What is 400?",
-            isCorrect: false
+        text: "What is 400?",
+        isCorrect: false
     }
     ]
 },
@@ -440,16 +439,16 @@ let gameObs = [{
     point: 400,
     answer: "18399 feet down & probably pretty darn cold the Malloy Deep is the deepest point in this ocean.",
     questions: [{
-            text: "What is The Indian Ocean?",
-            isCorrect: false
+        text: "What is The Indian Ocean?",
+        isCorrect: false
     },
     {
-            text: "What is The Pacific Ocean?",
-            isCorrect: false
+        text: "What is The Pacific Ocean?",
+        isCorrect: false
     },
     {
-            text: "What is The Artic Ocean?",
-            isCorrect: true
+        text: "What is The Artic Ocean?",
+        isCorrect: true
     }
     ]
 },
@@ -458,91 +457,87 @@ let gameObs = [{
     point: 500,
     answer: "Dinosaurs died out in this geological era that means middle life.",
     questions: [{
-            text: "What is The Mesozoic Era?",
-            isCorrect: true
+        text: "What is The Mesozoic Era?",
+        isCorrect: true
     },
     {
-            text: "What is The Caenozoic Era?",
-            isCorrect: false
+        text: "What is The Caenozoic Era?",
+        isCorrect: false
     },
     {
-            text: "What is The Palaeozoic Era",
-            isCorrect: false
+        text: "What is The Palaeozoic Era",
+        isCorrect: false
     }
     ]
 }
 ]
-           
-    // group2B1.questions.map(question => {
-    // if (question.isCorrect) {
-    //     console.log(question.text)
-    //}
- //});
-const catPick = document.getElementById('catpick').querySelectorAll('.amount')
-// console.log(catPick)
-// console.log(gameObs)
-catPick.forEach(div => {
 
-// document.querySelectorAll('#catpick').forEach(div => {
+
+
+const questOne = document.querySelector('#firstquestion');
+const questTwo = document.querySelector('#secondquestion');
+const questThree = document.querySelector('#thirdquestion');
+const scoreDisplay = document.querySelector('#scoredisplay');
+const answer = document.querySelector('#answer');
+
+const catPick = document.getElementById('catpick').querySelectorAll('.amount')
+
+catPick.forEach(div => {
     div.addEventListener('click', (e) => {
         let newDiv = document.createElement('DIV');
-        //if e.target clicked, display created div in displayBox.
         displayBox.appendChild(newDiv);
-       // console.log(gameObs)
         gameObs.forEach(obj => {
-           // console.log(obj)
-            // if (obj.catPoint === e.target.className) {
-                if (e.target.classList.contains(obj.catPoint)) {
+            if (e.target.classList.contains(obj.catPoint)) {
                 objInPlay = obj;
-                
-                // console.log(objInPlay)
-               // score = score + obj.point;
-               // console.log(obj)
-            } 
+            }
         })
-        
-            document.querySelector('#answer').innerHTML = (objInPlay.answer);
-            document.querySelector('#firstquestion').innerHTML = (objInPlay.questions[0].text)
-            document.querySelector('#secondquestion').innerHTML = (objInPlay.questions[1].text);
-            document.querySelector('#thirdquestion').innerHTML = (objInPlay.questions[2].text);
-           //console.log(document.querySelector('#answer').innerHTML)
-           // console.log(document.querySelector('#firstquestion').innerHTML)
+
+        answer.innerHTML = (objInPlay.answer);
+        questOne.innerHTML = (objInPlay.questions[0].text)
+        questTwo.innerHTML = (objInPlay.questions[1].text);
+        questThree.innerHTML = (objInPlay.questions[2].text);
     })
 })
-        let questOne = document.querySelector('#firstquestion');
-        let questTwo = document.querySelector('#secondquestion');
-        let questThree = document.querySelector('#thirdquestion');
-        questOne.addEventListener('click', (e) => {
-            objInPlay.questions.map(question => {
-            if (question.isCorrect) {
-                score = score + obj.point;
-                 console.log(score)
+
+const checkQuestions = (e) => {
+    let wrongs = 0
+    for (let i = 0; i < objInPlay.questions.length; i++) {
+        if (e.target.innerHTML === objInPlay.questions[i].text && objInPlay.questions[i].isCorrect) {
+            score = score + objInPlay.point;
+            scoreDisplay.innerHTML = score;
+            break
+        } else {
+            wrongs = wrongs + 1
+        }
+
+    }
+    if (wrongs >= 3) {
+        console.log('Loser!!')
+    }
+    checkScore()
+}
+
+
+
+const checkScore = () => {
+    if (score < 2000) {
+        console.log(score);
+        start();
+    } else {
+        if (score >= 2000) {
+            console.log(finalQuestion)
+        } else {
+            if (score === 0) {
+                console.log("Game over.")
+            } else {
+                console.log(score + ' ' + 'Good game.')
             }
-            })
-            
-     
-            })
+        }
         
+    }
+}
+displayBoxList.forEach(box => {
+    box.addEventListener('click', checkQuestions, { once: true })
+})
 
-        // let rightQuestion = (gameObs) 
-        //         if (score < 2000) {
-        //             console.log(score);
-        //             start();
-        //         } else {
-        //            // console.log(rightQuestion)
-        //             if (score >= 2000) {
-        //                 console.log(finalQuestion)
-        //             } else {
-        //                 if (score === 0) {
-        //                     console.log("Game over.")
-        //                 } else {
-        //                     console.log(score + ' ' + 'Good game.')
-        //                 }
-        //             }
-    
 
-    
-        //         }
-        //     })
-        // })  
-    
