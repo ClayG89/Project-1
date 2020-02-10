@@ -229,12 +229,12 @@ let gameObs = [{
     {
             text: "Who is Dennis Rodman?",
             isCorrect: false
-        },
-        {
+    },
+    {
             text: "Who is Kevin Garnett?",
             isCorrect: true
-        }
-        ]
+    }
+    ]
 },
 {
     catPoint: "cat3-300",
@@ -243,16 +243,16 @@ let gameObs = [{
     questions: [{
             text: "Who are the Sam Antonio Spurs?",
             isCorrect: true
-        },
-        {
+    },
+    {
             text: "Who are the Houston Rockets?",
             isCorrect: false
-        },
-        {
+    },
+    {
             text: "Who are the Dallas Mavericks?",
             isCorrect: false
-        }
-        ]
+    }
+    ]
 },
 {
     catPoint: "cat3-400",
@@ -261,16 +261,16 @@ let gameObs = [{
     questions: [{
             text: "What is Baton Rouge, LA?",
             isCorrect: false
-        },
-        {
+    },
+    {
             text: "What is Tampa Bay, FL?",
             isCorrect: false
-        },
-        {
+    },
+    {
             text: "What is New Orleans, LA?",
             isCorrect: true
-        }
-        ]
+    }
+    ]
 },
 {
     catPoint: "cat3-500",
@@ -397,7 +397,42 @@ let gameObs = [{
             isCorrect: false
         }
         ]
-
+},
+{
+    catPoint: "cat5-200",
+    point: 200,
+    answer: "Seems counterintuitive but the Earth is farthest from the sun during this month",
+    questions: [{
+            text: "What is July?",
+            isCorrect: true
+        },
+        {
+            text: "What is August?",
+            isCorrect: false
+        },
+        {
+            text: "What is January?",
+            isCorrect: false
+        }
+        ]
+},
+{
+    catPoint: "cat4-100",
+    point: 100,
+    answer: "In 2018 he announced that his 3-year Farewell Yellow Brick Road tour would be his last '.",
+    questions: [{
+            text: "Who is Paul Simon?",
+            isCorrect: false
+        },
+        {
+            text: "Who is LL Cool J?",
+            isCorrect: false
+        },
+        {
+            text: "Who is Elton John?",
+            isCorrect: true
+        }
+        ]
 }
 ]
            
