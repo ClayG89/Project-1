@@ -488,9 +488,9 @@ catPick.forEach(div => {
         let newDiv = document.createElement('DIV');
         //if e.target clicked, display created div in displayBox.
         displayBox.appendChild(newDiv);
-        console.log(gameObs)
+       // console.log(gameObs)
         gameObs.forEach(obj => {
-            console.log(obj)
+           // console.log(obj)
             // if (obj.catPoint === e.target.className) {
                 if (e.target.classList.contains(obj.catPoint)) {
                 objInPlay = obj;
@@ -514,12 +514,15 @@ catPick.forEach(div => {
         let questThree = document.querySelector('#thirdquestion');
         questOne.addEventListener('click', (e) => {
             objInPlay.questions.map(question => {
-             if (question.isCorrect) {
+            if (question.isCorrect) {
                 score = score + obj.point;
-                console.log(score)
+                 console.log(score)
             }
             })
-        })
+            
+     
+            })
+        
 
         // let rightQuestion = (gameObs) 
         //         if (score < 2000) {
