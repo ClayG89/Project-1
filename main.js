@@ -499,9 +499,25 @@ catPick.forEach(div => {
     })
 })
 
+catPick.forEach(div => {
+    let questThree = document.querySelector('#thirdquestion');
+    questOne.addEventListener('click', (e) => {
+        objInPlay.questions.map(question => {
+
+            if (question.isCorrect) {
+                score = score + obj.point;
+                console.log(score)
+            }
+        })
+    })
+
+
+})
+
+
 const checkQuestions = (e) => {
     let wrongs = 0
-    for (let i = 0; i < objInPlay.questions.length; i++) {
+    for (let i = 0; i <= objInPlay.questions.length; i++) {
         if (e.target.innerHTML === objInPlay.questions[i].text && objInPlay.questions[i].isCorrect) {
             score = score + objInPlay.point;
             scoreDisplay.innerHTML = score;
@@ -509,12 +525,14 @@ const checkQuestions = (e) => {
             break
         } else {
             wrongs = wrongs + 1
-        }
 
+        }
     }
     if (wrongs >= 3) {
         console.log('Loser!!')
+
     }
+
     checkScore()
 }
 
@@ -522,8 +540,7 @@ const checkQuestions = (e) => {
 
 const checkScore = () => {
     if (score < 2000) {
-        console.log(score);
-        start();
+
     } else {
         if (score >= 2000) {
             console.log(finalQuestion)
@@ -538,7 +555,7 @@ const checkScore = () => {
     }
 }
 displayBoxList.forEach(box => {
-    box.addEventListener('click', checkQuestions, { once: true })
+    box.addEventListener('click', checkQuestions)
 })
 
 
