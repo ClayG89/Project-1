@@ -505,7 +505,7 @@ const checkQuestions = (e) => {
         if (e.target.innerHTML === objInPlay.questions[i].text && objInPlay.questions[i].isCorrect) {
             score = score + objInPlay.point;
             scoreDisplay.innerHTML = score;
-            
+
             break
         } else {
             wrongs = wrongs + 1
@@ -534,7 +534,7 @@ const checkScore = () => {
                 console.log(score + ' ' + 'Good game.')
             }
         }
-        
+
     }
 }
 displayBoxList.forEach(box => {

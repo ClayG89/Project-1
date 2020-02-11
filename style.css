@@ -26,11 +26,13 @@
 }
 #displaybox {
     display: inline-block;
-    height: 150px;
+    height: 155px;
     width: 900px; 
     border: 7px solid black;
     padding: .5em;
     background-color: white;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
     
 }
 
@@ -45,9 +47,10 @@ header {
     width: 120px;
     padding: 1em;
     border: 7px solid red;
-    font-size: 24px;
+    font-size: 26px;
     background-color: rgb(29, 29, 100);
     color: yellow;
+    font-family: 'Noto Sans', sans-serif;
     
 }
 .secrow {
@@ -56,8 +59,9 @@ header {
     padding: 1em;
     border: 7px solid red;
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     background-color: white;
+    font-family: 'Noto Sans', sans-serif;
 }
 .wrapper3 {
     display: grid;
@@ -95,4 +99,9 @@ margin: auto;
 background: white;
 font-size: 75px;
 font-weight: 800;
+}
+header h1 {
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    font-size: 75px;
 }
