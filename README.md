@@ -18,4 +18,4 @@ https://trello.com/b/VP4jmF8E/project-1
 
 Netify Link
 
-https://app.netlify.com/sites/naughty-easley-d75a2f/settings/general
+https://app.netlify.com/sites/naughty-easley-d75a2f
