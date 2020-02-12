@@ -499,20 +499,24 @@ catPick.forEach(div => {
     })
 })
 
-catPick.forEach(div => {
-    let questThree = document.querySelector('#thirdquestion');
-    questOne.addEventListener('click', (e) => {
-        objInPlay.questions.map(question => {
+// catPick.forEach(div => {
+    // if (e.target.innerHTML === )
+    // let questThree = document.querySelector('#thirdquestion');
+    // questOne.addEventListener('click', (e) => {
+    //     objInPlay.questions.map(question => {
 
-            if (question.isCorrect) {
-                score = score + obj.point;
-                console.log(score)
-            }
-        })
-    })
+    //         if (question.isCorrect) {
+    //             score = score + obj.point;
+    //             console.log(score)
+    //         }
+    //         else{
+    //             alert('Wrong!')
+    //         }
+    //     })
+    // })
 
 
-})
+// })
 
 
 const checkQuestions = (e) => {
@@ -527,9 +531,14 @@ const checkQuestions = (e) => {
             wrongs = wrongs + 1
 
         }
+        if (e.target.innerHTML !== objInPlay.questions[i].text && objInPlay.questions[i].isCorrect) {
+        alert('WRONG!')
+        }
     }
+    
+    
     if (wrongs >= 3) {
-        console.log('Loser!!')
+        alert('Loser!!')
 
     }
 
@@ -543,7 +552,7 @@ const checkScore = () => {
 
     } else {
         if (score >= 2000) {
-            console.log(finalQuestion)
+            alert('You Win!')
         } else {
             if (score === 0) {
                 console.log("Game over.")
